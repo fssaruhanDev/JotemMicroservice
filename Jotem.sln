@@ -1,11 +1,50 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{6A76F506-9551-4345-B241-A77B41762F90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jotem.Catalog.Api", "src\services\catalog\Jotem.Catalog.Api\Jotem.Catalog.Api.csproj", "{0C177D3F-AC1D-4596-81AE-F7ED4DEC5609}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "catalog", "catalog", "{580599EC-A13C-46C3-9957-A579758B155F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{A22F955E-012C-4EA0-899A-4B97E94D1BFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jotem.Shared", "..\src\shared\Jotem.Shared\Jotem.Shared.csproj", "{D8AD1211-36F9-49B3-8E3B-9E6CEDDD9547}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C177D3F-AC1D-4596-81AE-F7ED4DEC5609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C177D3F-AC1D-4596-81AE-F7ED4DEC5609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C177D3F-AC1D-4596-81AE-F7ED4DEC5609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C177D3F-AC1D-4596-81AE-F7ED4DEC5609}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8AD1211-36F9-49B3-8E3B-9E6CEDDD9547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8AD1211-36F9-49B3-8E3B-9E6CEDDD9547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8AD1211-36F9-49B3-8E3B-9E6CEDDD9547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8AD1211-36F9-49B3-8E3B-9E6CEDDD9547}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6A76F506-9551-4345-B241-A77B41762F90} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{0C177D3F-AC1D-4596-81AE-F7ED4DEC5609} = {580599EC-A13C-46C3-9957-A579758B155F}
+		{580599EC-A13C-46C3-9957-A579758B155F} = {6A76F506-9551-4345-B241-A77B41762F90}
+		{A22F955E-012C-4EA0-899A-4B97E94D1BFB} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{D8AD1211-36F9-49B3-8E3B-9E6CEDDD9547} = {A22F955E-012C-4EA0-899A-4B97E94D1BFB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8384822A-6545-4F61-9D51-DC97F31D751A}
