@@ -25,7 +25,7 @@ namespace Jotem.Catalog.Api.Repositories
             builder.OwnsOne(c => c.Feature, feature =>
             {
                 feature.Property(x => x.Duration).HasElementName("duration");
-                feature.Property(x => x.Raiting).HasElementName("raiting");
+                feature.Property(x => x.Rating).HasElementName("raiting");
                 feature.Property(x => x.EducatorFullName).HasElementName("educatorFullName").HasMaxLength(100);
             });
         }

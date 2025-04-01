@@ -11,7 +11,7 @@ namespace Jotem.Catalog.Api.Repositories
         public void Configure(EntityTypeBuilder<Category> builder)
         {
 
-            builder.ToCollection("category");
+            builder.ToCollection("categories");
             builder.HasKey(id => id.Id);
             builder.Property(id => id.Id).ValueGeneratedNever();
             builder.Property(id => id.Name).HasElementName("name").HasMaxLength(100);

@@ -7,11 +7,11 @@ namespace Jotem.Catalog.Api.Options
     {
 
 
-        public static IServiceCollection AddMongoOptions(this IServiceCollection services)
+        public static IServiceCollection AddMongoOptionsExt(this IServiceCollection services)
         {
-            services.AddOptions<MongoOptions>().BindConfiguration(nameof(MongoOptions)).ValidateDataAnnotations().ValidateOnStart();
+            services.AddOptions<MongoOption>().BindConfiguration(nameof(MongoOption)).ValidateDataAnnotations().ValidateOnStart();
 
-            services.AddSingleton(sp => sp.GetRequiredService<IOptions<MongoOptions>>().Value);
+            services.AddSingleton(sp => sp.GetRequiredService<IOptions<MongoOption>>().Value);
 
             return services;
         }
