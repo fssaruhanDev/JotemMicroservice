@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{A22F95
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jotem.Shared", "..\src\shared\Jotem.Shared\Jotem.Shared.csproj", "{D8AD1211-36F9-49B3-8E3B-9E6CEDDD9547}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "basket", "basket", "{4985847F-ECC8-42DC-B006-FC0132795841}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jotem.Basket.Api", "src\services\basket\Jotem.Basket.Api\Jotem.Basket.Api.csproj", "{28B5EF3B-58EC-4366-A998-1103E372D63F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,10 @@ Global
 		{D8AD1211-36F9-49B3-8E3B-9E6CEDDD9547}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8AD1211-36F9-49B3-8E3B-9E6CEDDD9547}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8AD1211-36F9-49B3-8E3B-9E6CEDDD9547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28B5EF3B-58EC-4366-A998-1103E372D63F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28B5EF3B-58EC-4366-A998-1103E372D63F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28B5EF3B-58EC-4366-A998-1103E372D63F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28B5EF3B-58EC-4366-A998-1103E372D63F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +53,8 @@ Global
 		{580599EC-A13C-46C3-9957-A579758B155F} = {6A76F506-9551-4345-B241-A77B41762F90}
 		{A22F955E-012C-4EA0-899A-4B97E94D1BFB} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{D8AD1211-36F9-49B3-8E3B-9E6CEDDD9547} = {A22F955E-012C-4EA0-899A-4B97E94D1BFB}
+		{4985847F-ECC8-42DC-B006-FC0132795841} = {6A76F506-9551-4345-B241-A77B41762F90}
+		{28B5EF3B-58EC-4366-A998-1103E372D63F} = {4985847F-ECC8-42DC-B006-FC0132795841}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8384822A-6545-4F61-9D51-DC97F31D751A}
